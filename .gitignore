@@ -2,4 +2,7 @@
 *.db
 
 # Config Files
-# None
+*.env
+
+# ETC
+__pycache__
