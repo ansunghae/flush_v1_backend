@@ -7,6 +7,7 @@ class user(Base):
     __tablename__ = "userData"
 
     no = Column(Integer, primary_key = True, autoincrement = True)
+    id = Column(Text, nullable = False)
+    password = Column(Text, nullable = False)
     name = Column(Text, nullable = False)
     phone = Column(Text, nullable = False)
-    join_date = Column(DateTime, nullable = False, default=datetime.now)
